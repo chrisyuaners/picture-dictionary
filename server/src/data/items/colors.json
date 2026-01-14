@@ -1,0 +1,53 @@
+{
+  "categoryId": "colors",
+  "items": [
+    {
+      "id": "colors-red",
+      "word": "Red",
+      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-blue",
+      "word": "Blue",
+      "imageUrl": "https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-green",
+      "word": "Green",
+      "imageUrl": "https://images.unsplash.com/photo-1557682260-96773eb01377?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-yellow",
+      "word": "Yellow",
+      "imageUrl": "https://images.unsplash.com/photo-1557682268-e3955ed5d83f?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-orange",
+      "word": "Orange",
+      "imageUrl": "https://images.unsplash.com/photo-1557682204-e53cee1e5b90?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-purple",
+      "word": "Purple",
+      "imageUrl": "https://images.unsplash.com/photo-1557682233-43e671455dfa?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-pink",
+      "word": "Pink",
+      "imageUrl": "https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    },
+    {
+      "id": "colors-black",
+      "word": "Black",
+      "imageUrl": "https://images.unsplash.com/photo-1557682220-e0b0ddb92fc6?w=400&h=400&fit=crop",
+      "articlePrefix": ""
+    }
+  ]
+}

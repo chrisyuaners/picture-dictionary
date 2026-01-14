@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "food",
+      "name": "Food",
+      "icon": "🍎",
+      "description": "Fruits, vegetables, and other foods",
+      "itemCount": 10
+    },
+    {
+      "id": "animals",
+      "name": "Animals",
+      "icon": "🐕",
+      "description": "Common animals and pets",
+      "itemCount": 10
+    },
+    {
+      "id": "household",
+      "name": "Household",
+      "icon": "🏠",
+      "description": "Things found around the house",
+      "itemCount": 10
+    },
+    {
+      "id": "colors",
+      "name": "Colors",
+      "icon": "🎨",
+      "description": "Common colors",
+      "itemCount": 8
+    }
+  ]
+}

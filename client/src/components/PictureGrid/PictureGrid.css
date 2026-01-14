@@ -1,0 +1,59 @@
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+.picture-grid__empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.picture-grid__skeleton-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.picture-grid__skeleton-image {
+  aspect-ratio: 1;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.picture-grid__skeleton-label {
+  height: 3rem;
+  margin: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .picture-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .picture-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "categoryId": "household",
+  "items": [
+    {
+      "id": "household-chair",
+      "word": "Chair",
+      "imageUrl": "https://images.unsplash.com/photo-1503602642458-232111445657?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-table",
+      "word": "Table",
+      "imageUrl": "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-lamp",
+      "word": "Lamp",
+      "imageUrl": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-clock",
+      "word": "Clock",
+      "imageUrl": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-book",
+      "word": "Book",
+      "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-cup",
+      "word": "Cup",
+      "imageUrl": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-bed",
+      "word": "Bed",
+      "imageUrl": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-door",
+      "word": "Door",
+      "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-window",
+      "word": "Window",
+      "imageUrl": "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "household-key",
+      "word": "Key",
+      "imageUrl": "https://images.unsplash.com/photo-1582139329536-e7284fece509?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    }
+  ]
+}

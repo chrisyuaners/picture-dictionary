@@ -1,0 +1,65 @@
+{
+  "categoryId": "animals",
+  "items": [
+    {
+      "id": "animals-dog",
+      "word": "Dog",
+      "imageUrl": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-cat",
+      "word": "Cat",
+      "imageUrl": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-bird",
+      "word": "Bird",
+      "imageUrl": "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-fish",
+      "word": "Fish",
+      "imageUrl": "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-rabbit",
+      "word": "Rabbit",
+      "imageUrl": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-horse",
+      "word": "Horse",
+      "imageUrl": "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-cow",
+      "word": "Cow",
+      "imageUrl": "https://images.unsplash.com/photo-1527153907251-6b9a29c5db50?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-elephant",
+      "word": "Elephant",
+      "imageUrl": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400&h=400&fit=crop",
+      "articlePrefix": "an"
+    },
+    {
+      "id": "animals-lion",
+      "word": "Lion",
+      "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    },
+    {
+      "id": "animals-butterfly",
+      "word": "Butterfly",
+      "imageUrl": "https://images.unsplash.com/photo-1559253664-ca249d4608c6?w=400&h=400&fit=crop",
+      "articlePrefix": "a"
+    }
+  ]
+}
