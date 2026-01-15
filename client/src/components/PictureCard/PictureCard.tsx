@@ -46,7 +46,7 @@ export function PictureCard({ item, onSpeak }: PictureCardProps) {
       <div className="picture-card__label">
         <span className="picture-card__word">{item.word}</span>
         <span className="picture-card__speaker" aria-hidden="true">
-          🔊
+          🎤
         </span>
       </div>
     </button>
