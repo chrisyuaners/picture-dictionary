@@ -1,59 +1,120 @@
 .picture-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1.5rem;
-  padding: 0 1rem 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 0 1.5rem 3rem;
+  perspective: 1000px;
 }
 
 .picture-grid__empty {
   text-align: center;
-  padding: 3rem 1rem;
-  color: #666;
+  padding: 4rem 2rem;
+  color: var(--swag-cyan);
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px var(--swag-cyan);
+  animation: emptyPulse 2s ease-in-out infinite;
+}
+
+@keyframes emptyPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
 }
 
 .picture-grid__skeleton-card {
-  background: white;
-  border-radius: 1rem;
+  background: linear-gradient(145deg, #1a1a3e, #2d1b4e);
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 15px rgba(0, 255, 255, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  position: relative;
+  animation: skeletonPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeletonPulse {
+  0%, 100% {
+    box-shadow:
+      0 4px 15px rgba(0, 255, 255, 0.2),
+      inset 0 0 20px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow:
+      0 4px 25px rgba(255, 215, 0, 0.3),
+      inset 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* ANIMATED BORDER FOR SKELETON */
+.picture-grid__skeleton-card::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(
+    45deg,
+    var(--swag-gold),
+    var(--swag-pink),
+    var(--swag-cyan),
+    var(--swag-gold)
+  );
+  background-size: 400% 400%;
+  border-radius: 1.6rem;
+  z-index: -1;
+  animation: borderRainbow 4s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes borderRainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 400% 50%; }
 }
 
 .picture-grid__skeleton-image {
   aspect-ratio: 1;
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 0.05) 25%,
+    rgba(0, 255, 255, 0.15) 50%,
+    rgba(255, 0, 255, 0.1) 75%,
+    rgba(255, 215, 0, 0.05) 100%
+  );
+  background-size: 300% 100%;
+  animation: shimmerSwag 2s infinite linear;
+}
+
+@keyframes shimmerSwag {
+  0% { background-position: -300% 0; }
+  100% { background-position: 300% 0; }
 }
 
 .picture-grid__skeleton-label {
-  height: 3rem;
-  margin: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
+  height: 3.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 0.1) 25%,
+    rgba(0, 255, 255, 0.2) 50%,
+    rgba(255, 0, 255, 0.15) 75%,
+    rgba(255, 215, 0, 0.1) 100%
+  );
+  background-size: 300% 100%;
+  animation: shimmerSwag 2s infinite linear;
+  animation-delay: 0.3s;
 }
 
 @media (min-width: 768px) {
   .picture-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 2rem;
-    padding: 0 2rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding: 0 2.5rem 3rem;
   }
 }
 
 @media (min-width: 1200px) {
   .picture-grid {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 }

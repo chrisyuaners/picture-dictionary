@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Header } from './components/Header/Header';
 import { CategoryTabs } from './components/CategoryTabs/CategoryTabs';
 import { PictureGrid } from './components/PictureGrid/PictureGrid';
-import { useSpeechSynthesis } from './hooks/useSpeechSynthesis';
 import { fetchCategories, fetchItems } from './services/api';
 import type { Category, DictionaryItem } from './types';
 import './App.css';
+
+const API_BASE = 'http://localhost:3001';
 
 function App() {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -13,8 +14,7 @@ function App() {
   const [items, setItems] = useState<DictionaryItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
-  const { speak } = useSpeechSynthesis();
+  const [currentAudio, setCurrentAudio] = useState<HTMLAudioElement | null>(null);
 
   // Fetch categories on mount
   useEffect(() => {
@@ -54,9 +54,24 @@ function App() {
     setSelectedCategory(categoryId);
   };
 
-  const handleSpeak = (text: string) => {
-    speak(text);
-  };
+  const handleSpeak = useCallback((word: string) => {
+    // Stop any currently playing audio
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    // Play the audio file
+    const audioUrl = `${API_BASE}/audio/${word.toLowerCase()}.mp3`;
+    const audio = new Audio(audioUrl);
+
+    audio.onerror = () => {
+      console.warn(`Audio file not found: ${audioUrl}`);
+    };
+
+    audio.play().catch(console.error);
+    setCurrentAudio(audio);
+  }, [currentAudio]);
 
   return (
     <div className="app">
